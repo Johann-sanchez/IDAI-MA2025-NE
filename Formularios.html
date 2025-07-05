@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form{
+            background-color: black; width: 40% ; height: 800px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border: 20px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        label{
+            color: white;
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+        input{
+            background: yellow;
+            border: none;
+            border-bottom: 3px solid white;
+
+            padding: 10px;
+            color: red;
+        }
+        .two-columns{
+            display: flex;
+            justify-content: space-between;
+        }
+        .fileds{
+            display: flex;
+            flex-direction: column;
+        }
+        .btns{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            padding: 15px 40px;
+            background: gray;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="matricula">
+            Matricula
+        </label>
+        <input type="text" name="matricula" id="matricula">
+        
+        <div class="two-columns">
+
+            <div class="fileds">
+                <label for="nombre">
+                Nombre
+                </label>
+                <input type="text" name="Nombre" id="Nombre">
+            </div> 
+
+            <div class="fileds">
+                <label for="apellidos">
+                    Apellidos
+                </label>
+                <input type="text" name="apellidos" id="apellidos">
+            </div>
+        </div>
+
+        <div class="two-columns">
+            <div class="fileds">
+                <label for="Busqueda">
+                    Busqueda
+                </label>
+                <input type="search" name="Busqueda" id="Busqueda">
+            </div>
+
+            <div class="fileds">
+                <label for="URL">
+                    URL
+                </label>
+                <input type="url" name="URL" id="URL">  
+            </div>
+
+        </div>
+
+
+        <div class="fileds">
+
+            <label for="Email">
+                email
+            </label>
+
+            <input type="email" name="email" id="email">
+
+            <label for="Contraseña">
+                Contrasella
+            </label>
+            <input type="password" name="Contraseña" id="Contraseña">
+
+            
+            <label for="Campo de texto">
+                Campo de texto
+            </label>
+            <textarea name="Campo de texto" id="Campo de texto"></textarea>
+
+        </div>
+        
+
+
+        <div class="btns">
+            <button><input type="submit" value="guardar"></button> 
+            <button> <input type="reset" value="Limpiar"></button> 
+        </div>
+    </form>
+
+</body>
+</html>
