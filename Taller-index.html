@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller automotriz</title>
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: blanchedalmond;
+    color: blue;
+  }
+  h1, h2 {
+    color: #222;
+  }
+  .contacto, .agenda, .pago, .total {
+    margin-bottom: 30px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  th, td {
+    border: 1px solid #888;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  label {
+    display: block;
+    margin: 4px 0;
+  }
+  input[type="text"], select {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  .flex-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+    </style>
+    <h1>TALLER AUTOMOTRIZ</h1>
+<div class="contacto">
+  <p><strong>Dirección:</strong> Col. 10 de marzo calle melchor muzquis 125, Monterrey, NL</p>
+  <p><strong>Teléfono:</strong> 81 1060 2733</p>
+  <p><strong>Descripción:</strong> Reparación de motores, mecánica general, afinación, frenos, suspensión.</p>
+</div>
+
+<section>
+  <h2>SERVICIOS</h2>
+  <form action="#" method="post">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Selecciona servicio</th>
+        <th>Tipo de motor</th>
+        <th>Datos del auto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <label><input type="checkbox" name="servicios" value="Cambio de Aceite y Filtro"> Cambio de Aceite y Filtro — $1000.00</label>
+        </td>
+        <td rowspan="7" style="vertical-align: middle; text-align: left;">
+          <label><input type="radio" name="motor" value="4cilindros" checked> 4 cilindros (+0%)</label>
+          <label><input type="radio" name="motor" value="6cilindros"> 6 cilindros (+25%)</label>
+          <label><input type="radio" name="motor" value="8cilindros"> 8 cilindros (+50%)</label>
+        </td>
+        <td rowspan="7" style="vertical-align: middle; text-align: left;">
+          <label for="tipoAuto">Tipo de auto:</label>
+          <select id="tipoAuto" name="tipoAuto" required>
+            <option value="" disabled selected>Selecciona tipo de auto</option>
+            <option value="sedan">Sedán (+0%)</option>
+            <option value="lujo">Lujo (+30%)</option>
+            <option value="deportivo">Deportivo (+50%)</option>
+            <option value="familiar">Familiar (+50%)</option>
+            <option value="camioneta">Camioneta (+70%)</option>
+          </select>
+          <label for="datosAuto">Datos adicionales:</label>
+          <input type="text" id="datosAuto" name="datosAuto" placeholder="Ej: Color, placas...">
+        </td>
+      </tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Afinación General"> Afinación General — $3000.00</label></td></tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Mantenimiento A/A"> Mantenimiento A/A — $2500.00</label></td></tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Servicio de Frenos"> Servicio de Frenos — $4000.00</label></td></tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Filtro de Aceite"> Filtro de Aceite — $400.00</label></td></tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Alineación y Balanceo"> Alineación y Balanceo — $400.00</label></td></tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Sistema de Enfriamiento"> Sistema de Enfriamiento — $450.00</label></td></tr>
+      <tr><td><label><input type="checkbox" name="servicios" value="Amortiguadores"> Amortiguadores — $3000.00</label></td><td colspan="2"></td></tr>
+    </tbody>
+  </table>
+
+<section class="agenda">
+  <h2>AGENDA TU CITA</h2>
+  <label for="marcaAuto">Marca:</label>
+  <input type="text" id="marcaAuto" name="marcaAuto" placeholder="Marca" required>
+
+  <label for="modeloAuto">Modelo:</label>
+  <input type="text" id="modeloAuto" name="modeloAuto" placeholder="Modelo" required>
+
+  <label for="anioAuto">Año:</label>
+  <input type="text" id="anioAuto" name="anioAuto" placeholder="Año" required>
+
+  <label for="kilometrajeAuto">Kilometraje:</label>
+  <input type="text" id="kilometrajeAuto" name="kilometrajeAuto" placeholder="Kilometraje" required>
+</section>
+
+<section class="factura">
+  <h2>¿Requiere factura?</h2>
+  <label><input type="radio" name="factura" value="si" required> Sí (+16%)</label>
+  <label><input type="radio" name="factura" value="no" checked> No</label>
+</section>
+
+<section class="pago">
+  <h2>Tipo de pago</h2>
+  <label><input type="radio" name="pago" value="efectivo" required> Efectivo (descuento del -5%)</label>
+  <label><input type="radio" name="pago" value="tarjeta" checked> Tarjeta (sin descuento)</label>
+</section>
+
+<section class="total">
+  <h2>TOTAL:</h2>
+  
+</section>
+
+<br>
+<p>elaborado por Johann Sanchez</p>
+<p>taller web 2025</p>
+
+
+</form>
+</body>
+</html>

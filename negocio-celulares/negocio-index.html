@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocio de celulares</title>
+</head>
+<body>
+    <style>
+        h1{text-align: center;}
+       form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .three-columns{
+            display: flex;
+            justify-content: space-between;
+        }
+        .fileds{
+            display: flex;
+            flex-direction: column;
+        }
+        body{
+            background-color:grey;
+            margin-top: 5%;
+        }
+       h2{color: goldenrod;
+        background-color: black; 
+
+    }
+       h1{color: brown;
+        background-color: chocolate;
+    }
+       table{
+        background-color: bisque;
+        margin-left: 10%;
+       }
+
+
+      
+      
+    </style>
+    <h1>Celular Center</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <img src="img/marcas img.png" alt="marcas" width="200px" height="200px">
+                </th>
+                <th>
+                    <h2>
+                        
+                        <strong>Venta, Mantenimiento, Reparación, Refacciones, Accesorios, Soporte, Capacitación</strong>
+                    </h2>
+                </th>
+              
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <form action="">
+        <div class="three-columns">
+            <div class="fileds">
+                <label for="Tipo">
+                    <H2>TIPO</H2>
+                     <input type="radio" name="tipo" value="Nuevo"> Nuevo<br>
+                       <input type="radio" name="tipo" value="Usado"> Usado<br>
+                       <input type="radio" name="tipo" value="En Reparacion"> En Reparacion <br>
+                </label>
+            </div>
+            <div class="fileds">
+             <label for="Accesorios">
+                <h2>Accesorios</h2>
+                <label><input type="checkbox" name="accesorio" value="funda"> Funda</label><br>
+                    <label><input type="checkbox" name="accesorio" value="mica"> Mica</label><br>
+                    <label><input type="checkbox" name="accesorio" value="cargador"> Cargador</label><br>
+                    <label><input type="checkbox" name="accesorio" value="audifonos"> Audífonos</label><br>
+                    <label><input type="checkbox" name="accesorio" value="cable"> Cable USB</label><br>
+                    <label><input type="checkbox" name="accesorio" value="soporte"> Soporte para celular</label><br>
+                    <label><input type="checkbox" name="accesorio" value="bateria"> Batería extra</label><br>
+                    <label><input type="checkbox" name="accesorio" value="lapiz"> Lápiz táctil (stylus)</label><br>
+                    <label><input type="checkbox" name="accesorio" value="inalambrico"> Cargador inalámbrico</label><br>
+                    <label><input type="checkbox" name="accesorio" value="bocina"> Bocina portátil</label><br>
+             </label>
+
+            </div>
+            <div class="fileds">
+                <label for="Cliete">
+                    <h2>Cliente</h2>
+                     <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </label>
+            </div>      
+         </div>
+        
+        <div class="three-columns">
+            <div class="fileds">
+                <label for="Marcas">
+                    <h2>Marcas</h2>
+                    <select name="brands">
+                        <option value="alcatel">Alcatel</option>
+                        <option value="zte">ZTE</option>
+                        <option value="nokia">Nokia</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="lg">LG</option>
+                        <option value="samsung">Samsung</option>
+                    </select>
+                    
+                </label>
+            </div>
+            <div class="fileds">
+                <label for="Plan">
+                    <h2>Plan</h2>
+                    <select id="plan" name="plan">
+                        <option value="prepago">Prepago</option>
+                        <option value="jr">Plan JR</option>
+                        <option value="control">Plan Control</option>
+                        <option value="acceso_total">Plan Acceso Total</option>
+                     </select>
+                </label>
+            </div>
+            <div class="fileds">
+                <label for="Moneda"></label>
+                <h2>Moneda</h2>
+                <select id="moneda" name="moneda">
+                    <option value="pesos">Pesos</option>
+                    <option value="dolares">Dólares</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <P>Elaborado por Johann Sanchez</P>
+    <br>
+    <p>Curso de desarollo web 2025</p>
+</body>
+</html>
