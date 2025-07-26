@@ -127,16 +127,34 @@
   <label><input type="radio" name="pago" value="tarjeta" checked> Tarjeta (sin descuento)</label>
 </section>
 
-<section class="total">
-  <h2>TOTAL:</h2>
-  
-</section>
+  <label><strong>TOTAL:</strong></label><br>
+    <input type="text" id="total" readonly><br><br>
+
+    <button type="submit">Calcular Total</button>
 
 <br>
 <p>elaborado por Johann Sanchez</p>
 <p>taller web 2025</p>
 
-
+<script>
+    function calcularTotal(event) {
+      event.preventDefault();
+      let total = 0;
+      const servicios = document.querySelectorAll('input[name="servicio"]:checked');
+      servicios.forEach(servicio => {
+        total += parseFloat(servicio.value);
+      });
+      const motor = parseFloat(document.querySelector('input[name="motor"]:checked').value);
+      total += total * motor;
+      const auto = parseFloat(document.querySelector('select[name="auto"]').value);
+      total += total * auto;
+      const factura = parseFloat(document.querySelector('input[name="factura"]:checked').value);
+      total += total * factura;
+      const pago = parseFloat(document.querySelector('input[name="pago"]:checked').value);
+      total += total * pago;
+      document.getElementById("total").value = "$" + total.toFixed(2);
+    }
+</script>
 </form>
 </body>
 </html>

@@ -3,24 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido de Hamburguesas</title>
+    <title>Document</title>
 </head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff3e0;
+      margin: 0;
+      padding: 0;
+    }
+    header, section {
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+    }
+    .encabezado {
+      width: 100%;
+    }
+    .encabezado td:first-child {
+      width: 25%;
+      text-align: center;
+    }
+    .encabezado td:last-child {
+      width: 75%;
+      vertical-align: top;
+      padding-left: 20px;
+    }
+    h1 {
+      color: #d84315;
+      margin: 0;
+    }
+    hr {
+      border: none;
+      height: 4px;
+      background-color: #ff6f00;
+      margin: 10px 0;
+    }
+    marquee {
+      background-color: #ffe0b2;
+      color: #bf360c;
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .formulario table {
+      border-spacing: 20px;
+    }
+    .formulario td {
+      vertical-align: top;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], select {
+      width: 90%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .boton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+</style>
+
 <body>
-    
-    <table>
-        <tr>
-            <th> 
-             <img src="burger-logo-.jpg" alt="Logotipo" width="300px" height="300px">
-            </th>
-            <th>
-                <h1><strong>Pedido de Hamburguesas</strong></h1>
-                <h2> 
-                    
-                    
-                </h2>
-            </th>
-        </tr>
+    <header>
+    <table class="encabezado">
+      <tr>
+        <td><img src="logo.png" alt="Logo" style="width: 90%;"></td>
+        <td>
+          <h1>Hamburguesas El Buen Sabor</h1>
+          <hr>
+          <p>Dirección: Calle 123, Ciudad</p>
+          <p>Teléfono: 81 1060 2733</p>
+          <p>Web: www.elbuensabor.com</p>
+          <marquee>¡Las mejores hamburguesas de la ciudad!</marquee>
+        </td>
+      </tr>
     </table>
-    
+  </header>
+
+  <section class="formulario">
+    <hr>
+
+    <table>
+      <tr>
+        <td>
+          <h3>Tipo de Hamburguesa</h3>
+          <label><input type="radio" name="hamburguesa" value="35"> Sencilla ($35.00)</label>
+          <label><input type="radio" name="hamburguesa" value="45"> Especial ($45.00)</label>
+          <label><input type="radio" name="hamburguesa" value="60"> Doble ($60.00)</label>
+          <label><input type="radio" name="hamburguesa" value="90"> Suprema ($90.00)</label>
+
+          <h4>Tipo de Carne</h4>
+          <label><input type="radio" name="carne" value="Tradicional"> Tradicional</label>
+          <label><input type="radio" name="carne" value="Especial"> Especial</label>
+          <label><input type="radio" name="carne" value="Angus"> Angus</label>
+          <label><input type="radio" name="carne" value="Pollo"> Pollo</label>
+          <label><input type="radio" name="carne" value="Roast Beef"> Roast Beef</label>
+        </td>
+
+        <td>
+          <h3>Ingredientes Extras</h3>
+          <strong>Comunes</strong>
+          <label><input type="checkbox"> Tomate</label>
+          <label><input type="checkbox"> Cebolla</label>
+          <label><input type="checkbox"> Queso amarillo</label>
+          <label><input type="checkbox"> Jamón</label>
+
+          <strong>Especiales</strong>
+          <label><input type="checkbox"> Aguacate</label>
+          <label><input type="checkbox"> Cebolla morada</label>
+          <label><input type="checkbox"> Queso gouda</label>
+          <label><input type="checkbox"> Piña</label>
+          <label><input type="checkbox"> Champiñones</label>
+          <label><input type="checkbox"> Pepperoni</label>
+        </td>
+
+        <td>
+          <h3>Datos del Pedido</h3>
+          <label>Número de hamburguesas:</label>
+          <input type="text" name="cantidad">
+          <label>Nombre:</label>
+          <input type="text" name="nombre">
+          <label>Dirección:</label>
+          <input type="text" name="direccion">
+          <label>Teléfono:</label>
+          <input type="text" name="telefono">
+
+          <label>Modo de entrega:</label>
+          <select>
+            <option>A domicilio</option>
+            <option>Para recoger</option>
+            <option>Consumir en el local</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <center><button class="boton">Calcular Pedido</button></center>
+  </section>
 </body>
 </html>

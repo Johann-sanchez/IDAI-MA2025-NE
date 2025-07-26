@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        color: #222;
+        margin: 20px;
+    }
+    h1, h2 {
+        text-align: center;
+        margin: 0;
+    }
+    h1 {
+        margin-bottom: 5px;
+        color: #007700;
+    }
+    h2 {
+        margin-bottom: 30px;
+        font-weight: normal;
+        color: #004400;
+    }
+    form {
+        max-width: 500px;
+        margin: auto;
+        background: #fff;
+        padding: 15px 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #004400;
+    }
+    select, input[type="checkbox"] {
+        margin-top: 5px;
+    }
+    .checkbox-group label {
+        font-weight: normal;
+        display: block;
+        margin: 3px 0;
+        cursor: pointer;
+    }
+    button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        background-color: #007700;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #005500;
+    }
+</style>
+<body>
+     <h1>COMPUTER CENTER</h1>
+    <h2>Diseña y configura tu propia computadora personal de videojuegos</h2>
+
+    <form id="configForm">
+        <label for="gabinete">Gabinete:</label>
+        <select id="gabinete" name="gabinete" required>
+            <option value="" disabled selected>Selecciona un gabinete</option>
+            <option value="Minitorre" data-price="700">Minitorre — $700</option>
+            <option value="Torre" data-price="1200">Torre — $1200</option>
+            <option value="Desktop" data-price="550">Desktop — $550</option>
+            <option value="Gamer" data-price="2500">Gamer — $2500</option>
+        </select>
+
+        <label for="procesador">Procesador:</label>
+        <select id="procesador" name="procesador" required>
+            <option value="" disabled selected>Selecciona un procesador</option>
+            <option value="Celeron" data-price="900">Celeron — $900</option>
+            <option value="Intel i3" data-price="1500">Intel i3 — $1500</option>
+            <option value="Intel i5" data-price="3500">Intel i5 — $3500</option>
+            <option value="Intel i7" data-price="5000">Intel i7 — $5000</option>
+        </select>
+
+        <label for="disco">Disco Duro:</label>
+        <select id="disco" name="disco" required>
+            <option value="" disabled selected>Selecciona un disco duro</option>
+            <option value="500GB" data-price="500">500GB — $500</option>
+            <option value="750GB" data-price="800">750GB — $800</option>
+            <option value="1TB" data-price="1000">1TB — $1000</option>
+            <option value="250GB SSD" data-price="900">250 GB SSD — $900</option>
+            <option value="500GB SSD" data-price="1380">500 GB SSD — $1380</option>
+        </select>
+
+        <label for="ram">Memoria RAM:</label>
+        <select id="ram" name="ram" required>
+            <option value="" disabled selected>Selecciona la memoria RAM</option>
+            <option value="4GB" data-price="600">4 GB — $600</option>
+            <option value="8GB" data-price="1050">8 GB — $1050</option>
+            <option value="16GB" data-price="1950">16 GB — $1950</option>
+        </select>
+
+        <label for="monitor">Monitor:</label>
+        <select id="monitor" name="monitor" required>
+            <option value="" disabled selected>Selecciona el tamaño del monitor</option>
+            <option value="17" data-price="200">17"</option>
+            <option value="19" data-price="250">19"</option>
+            <option value="21.5" data-price="300">21.5"</option>
+            <option value="24" data-price="350">24"</option>
+            <option value="27" data-price="400">27"</option>
+            <option value="32" data-price="450">32"</option>
+        </select>
+
+        <label>Accesorios (elige los que desees):</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="accesorios" value="Mouse" data-price="150" /> Mouse</label>
+            <label><input type="checkbox" name="accesorios" value="Teclado" data-price="300" /> Teclado</label>
+            <label><input type="checkbox" name="accesorios" value="Bocinas" data-price="250" /> Bocinas</label>
+            <label><input type="checkbox" name="accesorios" value="Webcam" data-price="350" /> Webcam</label>
+            <label><input type="checkbox" name="accesorios" value="UPS" data-price="800" /> UPS</label>
+            <label><input type="checkbox" name="accesorios" value="Alfombrilla" data-price="100" /> Alfombrilla</label>
+            <label><input type="checkbox" name="accesorios" value="Control Gamer" data-price="900" /> Control Gamer</label>
+            <label><input type="checkbox" name="accesorios" value="Luz RGB" data-price="1200" /> Luz RGB</label>
+            <label><input type="checkbox" name="accesorios" value="Silla Gamer" data-price="2500" /> Silla Gamer</label>
+            <label><input type="checkbox" name="accesorios" value="Adaptador WiFi" data-price="350" /> Adaptador WiFi</label>
+            <label><input type="checkbox" name="accesorios" value="Hub USB" data-price="400" /> Hub USB</label>
+            <label><input type="checkbox" name="accesorios" value="Audífonos" data-price="500" /> Audífonos</label>
+            <label><input type="checkbox" name="accesorios" value="Monitor adicional" data-price="450" /> Monitor adicional</label>
+            <label><input type="checkbox" name="accesorios" value="Soporte" data-price="200" /> Soporte</label>
+            <label><input type="checkbox" name="accesorios" value="Ventilador" data-price="350" /> Ventilador</label>
+            <label><input type="checkbox" name="accesorios" value="Micrófono" data-price="600" /> Micrófono</label>
+            <label><input type="checkbox" name="accesorios" value="Lector SD" data-price="150" /> Lector SD</label>
+            <label><input type="checkbox" name="accesorios" value="Cable HDMI" data-price="100" /> Cable HDMI</label>
+            <label><input type="checkbox" name="accesorios" value="Base refrigerante" data-price="400" /> Base refrigerante</label>
+            <label><input type="checkbox" name="accesorios" value="Caja de herramientas" data-price="600" /> Caja de herramientas</label>
+        </div>
+
+        <button type="button" onclick="calcularTotal()">Enviar / Calcular Total</button>
+    </form>
+</body>
+</html>
